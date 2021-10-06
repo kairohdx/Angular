@@ -1,0 +1,17 @@
+<div (mouseenter)=mouseOver() (mouseleave)=mouseOut() class="card">
+    <div class="card-content">
+        <div class="img"><img src="{{urlToImg}}{{product.id}}" alt="{{product.name}}" height="300"></div>
+        <div class="bot">
+            <p>{{product.name |titlecase}}</p>
+            <div class="pos-center">
+                <button (click)="addToCart()" *ngIf="showBtn" class="btn-inverted btn-2">Adicionar</button>
+                <div *ngIf="showBtnInput" class="input-btn-2">
+                    <button (click)=remFromCart() class="input-btn-l">-</button>
+                    <input value="{{amount}}" readonly>
+                    <button (click)=addToCart() class="input-btn-r">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer">R$ {{product.price | number:'1.2-2'}}</div>
+</div>

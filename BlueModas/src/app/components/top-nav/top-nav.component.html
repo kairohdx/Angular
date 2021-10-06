@@ -1,0 +1,10 @@
+<nav class='topnav'>
+    <div class='topnav-links'>
+        <a [title]="'Cesta de Compras'"
+        [routerLink]="['/products']">𝔹𝕝𝕦𝕖 𝕄𝕠𝕕𝕒𝕤</a>
+    </div>
+    <div class='topnav-right'>
+            <a *ngIf="hasValue" [title]="'Cesta de Compras'"
+            [routerLink]="['/cart']" class='btn btn-2'>R$ {{totalPrice}}</a>
+    </div>
+</nav>

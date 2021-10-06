@@ -1,0 +1,47 @@
+.topnav{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #64a5d4;
+    overflow: hidden;
+    height: 32px;
+}
+
+.topnav-right{
+    float: right;
+    padding-right: 3%;
+}
+
+.topnav-links{
+    float: left
+}
+
+.topnav-links a{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    text-decoration-color: transparent;
+}
+
+.topnav-links a:hover{
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: #f2f2f2;
+}
+
+div.divisor{
+    float:left;
+    background-color: transparent;
+    width: 3px;
+    height: 30px;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}

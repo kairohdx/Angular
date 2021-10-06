@@ -1,0 +1,10 @@
+
+<div class="pos-center">
+    <div class="input">
+        <input (focus)="onFocus($event.target)" (blur)="onBlur($event.target)" type="text" autocomplete=off (keyup) = "searchProducts($event.target)">
+        <span class="label label-inside">BUSCAR</span>
+    </div>
+</div>
+
+
+<app-product *ngFor="let product of products" [product]="product"></app-product>

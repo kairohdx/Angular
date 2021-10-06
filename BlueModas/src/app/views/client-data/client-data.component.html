@@ -1,0 +1,33 @@
+<div class="pos-center">
+    <div class="card">
+        <h3>Informe seus Dados para Contato</h3>
+        <div class="card-content">
+            <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+                <div class="input">
+                    <input (focus)="onFocus($event.target)" (blur)="onBlur($event.target)" type="text" autocomplete=off formControlName="clientName" required>
+                    <span class="label label-inside">Nome</span>
+                    <div *ngIf="clientName?.invalid && (clientName?.dirty || clientName?.touched)" class="input-alert">
+                        <span>Campo Obrigatório</span>
+                    </div>
+                </div>
+                <div class="input">
+                    <input (focus)="onFocus($event.target)" (blur)="onBlur($event.target)" type="email" autocomplete=off formControlName="clientEmail" required>
+                    <span class="label label-inside">E-mail</span>
+                    <div *ngIf="clientEmail?.invalid && (clientEmail?.dirty || clientEmail?.touched)" class="input-alert">
+                        Campo Obrigatório
+                    </div>
+                </div>
+                <div class="input">
+                    <input (focus)="onFocus($event.target)" (blur)="onBlur($event.target)" type="text" autocomplete=off formControlName="clientTel" mask="(00) 0 0000-0000" required>
+                    <span class="label label-inside">Telefone</span>
+                    <div *ngIf="clientTel?.invalid && (clientTel?.dirty || clientTel?.touched)" class="input-alert">
+                        Campo Obrigatório
+                    </div>
+                </div>
+                <div class="pos-center">
+                    <button class="btn-2" type="submit">CONCLUIR</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

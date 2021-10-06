@@ -1,0 +1,33 @@
+div.input{
+    width: 100%;
+}
+
+.ng-invalid:not(form).ng-touched + span.label{
+    color:#d46464;
+}
+
+.ng-invalid:not(form).ng-touched{
+    color:#d46464;
+    border-color: rgba(212, 100, 100, 0.6);
+}
+
+.ng-invalid:not(form).ng-touched:focus{
+    box-shadow:  0 4px 0px -2px rgba(212 100 100 / 60%);
+}
+
+div.input-alert{
+    color:#d46464;
+    position: absolute;
+    font-size: 12px;
+    vertical-align: middle;
+    right: 2px;
+}
+
+div.card{
+    width: 1000px;
+    display: inline-block;
+}
+
+div.card-content{
+    height: auto;
+}

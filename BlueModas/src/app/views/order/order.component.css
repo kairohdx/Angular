@@ -1,0 +1,22 @@
+div.card{
+    min-width: 600px;
+    width: 70%;
+}
+
+div.card-content{
+    height: auto;
+}
+
+ul{
+    border: none;
+}
+
+div.total{
+    width: 100%;
+    text-align: right;
+    line-height: normal;
+}
+
+div.total > span{
+    padding-right: 15px;
+}

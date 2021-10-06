@@ -1,0 +1,278 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #64a5d4;
+    font-family: sans-serif, Arial, Helvetica;
+    min-width: 600px;
+    min-height: 100vh;
+}
+
+
+h1, h2, h3, h4, h5{
+    color: #64a5d4;
+    padding: 0;
+    margin: 0;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+
+textarea, input{
+    outline: none;
+    box-sizing: border-box;
+    border: 1px inset rgba(82, 186, 228, 0.6);
+    border-radius: 5px;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input{
+    height: 30px;
+    color: #64A5D4;
+}
+
+label{
+    display: block;
+    padding:0;
+    font-size: 18px;
+}
+
+textarea:focus, input:focus{
+    box-shadow: 0 0 1px 2px rgba(82, 186, 228, 0.6);
+}
+
+a.btn{
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1px 16px;
+    color: #f9f9f9;
+    border: solid 1px #b7b7b7;
+    background-color: #64a5d4;
+    border-radius: 15px;
+    outline: none;
+    border-style: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 13.33px;
+    vertical-align: middle;
+}
+
+a.btn:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 2px 3px #5495c4;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+a.btn-2, button.btn-2{
+    line-height: 30px;
+    min-width: 150px;
+    width: auto;
+}
+
+a.btn-inverted, button.btn-inverted{
+    background-color: #f9f9f9;
+    color: #64a5d4;
+    border: solid 1px #64a5d4;
+}
+
+a.btn-inverted:hover, button.btn-inverted:hover{
+    box-shadow: inset 0 0 2px 3px rgba(82, 186, 228, 0.8);
+}
+
+a.btn.disabled{
+    background-color: #b7b7b7;
+    color: #9a9a9a;
+}
+
+button{
+    color: #f9f9f9;
+    border-radius: 15px;
+    outline: none;
+    border: solid 1px #64a5d4;
+    background-color: #64a5d4;
+    width: 100px;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 2px 3px #5495c4;
+}
+
+button.btn-symbol{
+    width: auto;
+    font-size: 33px;
+    height: auto;
+    line-height: 100%;
+    vertical-align: middle;
+    background-color: rgba(150, 150, 150, 0);
+    text-decoration-line: underline;
+    text-decoration-color: transparent ;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+button.btn-symbol:hover{
+    box-shadow: inset 0 0 2px 3px #5495c4;
+    text-decoration-color: #3485b4;
+}
+
+button.disabled{
+    color: #f9f9f9;
+    background-color: rgba(183,183,183, 0.7);
+    text-decoration-color: #64a5d4;
+}
+
+button.disabled:hover{
+    cursor: default;
+}
+
+.input-group{
+    margin: 1%;
+    padding: 1%;
+    width: 100%;
+    clear: both;
+    text-align: left;
+}
+
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #fefefe;
+    padding: 2%;
+}
+
+.pos-center{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+input:read-only{
+    box-shadow: none;
+    cursor: default;
+}
+
+div.card{
+    min-width: 200px;
+    height: auto;
+    width: 250px;
+    border: solid 1px rgba(82, 186, 228, 0.5);
+    margin-bottom: 3%;
+    padding: 0;
+    display: inline-block;
+    margin: 1% 3px;
+}
+
+.card-header{
+    display: block;
+    border-bottom: solid  1px rgba(82, 186, 228, 0.5);
+    background-color: #f7f7f7;
+    text-align: center;
+    width: 100%;
+    height: 15%;
+}
+
+h3.card-title{
+    border-bottom: solid  1px rgba(82, 186, 228, 0.5);
+    background-color: #f7f7f7;
+    text-align: center;
+    height: 15%;
+}
+
+div.card-content{
+    display: block;
+    padding: 5%;
+    text-align: left;
+    height: 400px;
+    position: relative;
+}
+
+ul > div{
+    padding: 5px;
+    line-height: 50px;
+}
+
+ul > div > p{
+    border: solid 1px;
+    height: 40px;
+    min-width: 120px;
+    display: inline-block;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    font-size: 20px;
+    margin: 0;
+    padding: 1px 16px;
+    line-height: 42px;
+    vertical-align: middle;
+    cursor: default;
+}
+
+ul{
+    border: solid 1px;
+    padding: 1%;
+    width: 90%;
+    display: inline-block;
+    text-align: left;
+}
+
+li{
+    list-style-type: none;
+    border-bottom: solid 1px;
+    padding: 30px 5px 2px 5px;
+}
+
+li > p{
+    clear:both;
+    display: block;
+}
+
+li > p span{
+    float: right;
+    display: block;
+    text-align: center;
+}
+
+div.input > input{
+    position: absolute;
+    display: inline-block;
+    bottom: 2px;
+    width: 100%;
+    left: 0;
+    vertical-align: baseline;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+}
+
+div.input{
+    display: inline-block;
+    width: 50%;
+    height: 51px;
+    position: relative;
+    overflow: hidden;
+}
+
+div.input > input:focus{
+    box-shadow:  0 4px 0px -2px rgba(82 186 228 / 60%);
+}
+
+div.input > span.label{
+    position: absolute;
+    left: 15px;
+    bottom: 32px;
+    left: 15px;
+    transition: 0.5s;
+}
+
+div.input > span.label-inside{
+    bottom: 4px;
+    transition: 0.5s;
+}

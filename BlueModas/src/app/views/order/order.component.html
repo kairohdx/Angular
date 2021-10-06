@@ -1,0 +1,33 @@
+<div class="pos-center">
+    <h3 class="pos-center">Resumo do Pedido</h3>
+    <div class="card">
+        <div *ngIf="order" class="card-content">
+            <h4 class="pos-center">Pedido Numero #{{order.id}}</h4>
+            <h5>Informações do cliente</h5>
+            <p>Nome:{{ order.clientName }}</p>
+            <p>E-mail: {{ order.clientEmail }}</p>
+            <p>Telefone {{ order.clientTel }}</p>
+            <div>
+                <h5>Produtos comprados</h5>
+                <ul>
+                    <li *ngFor="let item of order.items">
+                        <p>
+                            {{item.product.name |titlecase}} - {{item.product.price | number:'1.2-2'}}
+                            <small>
+                                <span>
+                                    R$ {{item.total | number:'1.2-2'}}
+                                </span>
+                            </small>
+                        </p>
+                    </li>
+                    <div class="total">
+                        <span><b>R$ {{total}}</b></span>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div *ngIf="!order" class="card-content">
+            <h3>Pedido não encontrado!</h3>
+        </div>
+    </div>
+</div>

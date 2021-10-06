@@ -1,0 +1,27 @@
+<div class="pos-center">
+    <div class="card">
+        <div class="card-content">
+            <h3>Produtos selecionados</h3>
+            <ul>
+                <li *ngFor="let cartItem of cartItems">
+                    <p>
+                        {{cartItem.product.name |titlecase}} - {{cartItem.product.price | number:'1.2-2'}}
+                        <small>
+                            <span>
+                                R$ {{cartItem.total | number:'1.2-2'}}
+                                <div class="input-btn-2">
+                                    <button (click)="remFromCart(cartItem.productId)" class="input-btn-l">-</button>
+                                    <input value="{{cartItem.amount}}" readonly>
+                                    <button (click)="addToCart(cartItem.productId)" class="input-btn-r">+</button>
+                                </div>
+                            </span>
+                        </small>
+                    </p>
+                </li>
+                <div *ngIf="hasValue" class="pos-center"><p>R$ {{totalPrice}}</p><a [title]="'Cesta de Compras'"
+                    [routerLink]="['/client-data']" class="btn finalize-order">FINALIZAR COMPRA</a></div>
+            </ul>
+        </div>
+    </div>
+</div>
+

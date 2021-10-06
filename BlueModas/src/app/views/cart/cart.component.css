@@ -1,0 +1,55 @@
+
+div.input-btn-2{
+    width: 60px;
+}
+
+div.input-btn-2 > .input-btn-l{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+div.input-btn-2 > .input-btn-r{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+div.input-btn-2 > input{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0;
+}
+
+a.finalize-order{
+    height: 42px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    vertical-align: middle;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 42px;
+}
+
+
+div.card{
+    min-width: 600px;
+    width: 70%;
+}
+
+div.card-content{
+    text-align: center;
+    height: auto;
+}
+
+ul{
+    border: none;
+}
